@@ -1,0 +1,4 @@
+﻿  Ortiz_Rafael_M3_UF1_Actividad2.cpp
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Ortiz_Rafael_M3_UF1_Actividad2\Ortiz_Rafael_M3_UF1_Actividad2\Ortiz_Rafael_M3_UF1_Actividad2.cpp(116,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Ortiz_Rafael_M3_UF1_Actividad2\Ortiz_Rafael_M3_UF1_Actividad2\Ortiz_Rafael_M3_UF1_Actividad2.cpp(161,24): warning C4305: '=': truncamiento de 'double' a 'float'
+  Ortiz_Rafael_M3_UF1_Actividad2.vcxproj -> C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Ortiz_Rafael_M3_UF1_Actividad2\x64\Debug\Ortiz_Rafael_M3_UF1_Actividad2.exe

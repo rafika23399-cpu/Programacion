@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rafik\\Desktop\\Repositorio Programacion\\Programacion\\Ortiz_Rafael_UF1_Actividad3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15B77AC4-6FD7-4A8C-BFEA-765EB01CAB78}|Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.vcxproj|C:\\Users\\rafik\\Desktop\\Repositorio Programacion\\Programacion\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{15B77AC4-6FD7-4A8C-BFEA-765EB01CAB78}|Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.vcxproj|solutionrelative:Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Ortiz_Rafael_UF1_Actividad3.cpp",
+              "DocumentMoniker": "C:\\Users\\rafik\\Desktop\\Repositorio Programacion\\Programacion\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
+              "RelativeDocumentMoniker": "Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
+              "ToolTip": "C:\\Users\\rafik\\Desktop\\Repositorio Programacion\\Programacion\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
+              "RelativeToolTip": "Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAD4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-24T14:13:34.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
