@@ -14,8 +14,10 @@ int main() {
     //EJERCICIO 2: Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle while.
     /*
     int bucle = 0;
-    while (bucle <= 100) {
-        if (bucle % 5 == 0) {
+    while (bucle <= 100) 
+    {
+        if (bucle % 5 == 0) 
+        {
             printf("%d ", bucle);
         }
         bucle++;
@@ -26,7 +28,8 @@ int main() {
     /*
     int bucle = 0;
     do {
-        if (bucle % 5 == 0) {
+        if (bucle % 5 == 0) 
+        {
             printf("%d ", bucle);
         }
         bucle++;
@@ -36,7 +39,8 @@ int main() {
     //EJERCICIO 4: Muestra los números del 320 al 160, contando de 20 en 20 utilizando un bucle for.
     /*
     int bucle;
-    for (bucle = 320; bucle >= 160; bucle -= 20) {
+    for (bucle = 320; bucle >= 160; bucle -= 20)
+    {
         printf("%d ", bucle);
     }
     */
@@ -44,7 +48,8 @@ int main() {
     //EJERCICIO 5: Muestra los números del 320 al 160, contando de 20 en 20 utilizando un bucle while.
     /*
     int bucle = 320;
-    while (bucle >= 160) {
+    while (bucle >= 160)
+    {
         printf("%d ", bucle);
         bucle -= 20;
     }
@@ -67,7 +72,8 @@ int main() {
     printf("Introduzca la combinacion de 4 cifras: ");
     scanf_s("%d", &intento);
 
-    if (intento == COMBINACION_SECRETA) {
+    if (intento == COMBINACION_SECRETA)
+    {
         printf("La caja fuerte se ha abierto satisfactoriamente.\n");
     } else {
         printf("Lo siento, esa no es la combinacion.\n");
@@ -81,11 +87,13 @@ int main() {
     int intentos_restantes = 4;
     int acertado = 0;
 
-    while (intentos_restantes > 0 && acertado == 0) {
+    while (intentos_restantes > 0 && acertado == 0)
+    {
         printf("Le quedan %d intentos. Introduzca la combinacion: ", intentos_restantes);
         scanf_s("%d", &intento);
 
-        if (intento == COMBINACION_SECRETA) {
+        if (intento == COMBINACION_SECRETA)
+        {
             printf("La caja fuerte se ha abierto satisfactoriamente.\n");
             acertado = 1;
         } else {
@@ -107,13 +115,15 @@ int main() {
     printf("Introduce un numero para contar sus digitos: ");
     scanf_s("%d", &numero);
 
-    if (numero == 0) {
+    if (numero == 0)
+    {
         digitos = 1;
     } else {
         int temp = numero;
         if (temp < 0) temp = -temp;
 
-        while (temp > 0) {
+        while (temp > 0) 
+        {
             temp = temp / 10;
             digitos++;
         }
@@ -131,11 +141,15 @@ int main() {
     printf("Introduce un numero para saber si es primo: ");
     scanf_s("%d", &numero);
 
-    if (numero <= 1) {
+    if (numero <= 1)
+    {
         es_primo = 0;
-    } else {
-        for (divisor = 2; divisor <= numero / 2; divisor++) {
-            if (numero % divisor == 0) {
+    } else
+    {
+        for (divisor = 2; divisor <= numero / 2; divisor++)
+        {
+            if (numero % divisor == 0)
+            {
                 es_primo = 0;
                 break;
             }
