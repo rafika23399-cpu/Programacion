@@ -26,7 +26,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
@@ -36,14 +36,10 @@
               "RelativeDocumentMoniker": "Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
               "ToolTip": "C:\\Users\\rafik\\Desktop\\Repositorio Programacion\\Programacion\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
               "RelativeToolTip": "Ortiz_Rafael_UF1_Actividad3\\Ortiz_Rafael_UF1_Actividad3.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAKcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-24T14:13:34.179Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             }
           ]
         }

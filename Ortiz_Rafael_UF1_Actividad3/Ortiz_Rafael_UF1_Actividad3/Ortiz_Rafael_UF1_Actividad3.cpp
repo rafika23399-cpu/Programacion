@@ -5,7 +5,8 @@ int main() {
 /*
     //EJERCICIO 1: Muestra los números múltiplos de 5 de 0 a 100 utilizando un bucle for.
     int bucle;
-    for (bucle = 0; bucle <= 100; bucle++) {
+    for (bucle = 0; bucle <= 100; bucle++) 
+        {
         if (bucle % 5 == 0) {
             printf("%d ", bucle);
         }
@@ -75,7 +76,9 @@ int main() {
     if (intento == COMBINACION_SECRETA)
     {
         printf("La caja fuerte se ha abierto satisfactoriamente.\n");
-    } else {
+    } 
+    else 
+    {
         printf("Lo siento, esa no es la combinacion.\n");
     }
     */
@@ -96,13 +99,17 @@ int main() {
         {
             printf("La caja fuerte se ha abierto satisfactoriamente.\n");
             acertado = 1;
-        } else {
+        }
+        
+        else
+        {
             printf("Lo siento, esa no es la combinacion.\n");
         }
         intentos_restantes--;
     }
 
-    if (acertado == 0) {
+    if (acertado == 0)
+    {
         printf("Ha agotado todos sus intentos. La caja fuerte permanece cerrada.\n");
     }
     */
@@ -118,7 +125,8 @@ int main() {
     if (numero == 0)
     {
         digitos = 1;
-    } else {
+    } else 
+        {
         int temp = numero;
         if (temp < 0) temp = -temp;
 
@@ -156,9 +164,12 @@ int main() {
         }
     }
 
-    if (es_primo == 1) {
+    if (es_primo == 1)
+    {
         printf("El numero %d es primo.\n", numero);
-    } else {
+    } 
+    else 
+    {
         printf("El numero %d no es primo.\n", numero);
     }
     */
