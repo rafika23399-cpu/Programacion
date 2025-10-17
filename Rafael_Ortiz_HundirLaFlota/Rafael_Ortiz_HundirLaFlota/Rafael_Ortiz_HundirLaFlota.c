@@ -4,7 +4,6 @@
 #include <math.h>
 #include <string.h>
 
-#define SHIPSIZE 3
 #define MAPSIZE 10
 
 int main()
@@ -55,16 +54,6 @@ int main()
         scanf_s("%d %d", &shipRow[i], &shipColumn[i]);
         grid[shipRow[i]][shipColumn[i]] = 'X';
     }
-/*    printf("Mapa con barcos:\n");
-
-    for (int i = 0; i < 10; i++)
-    {
-        for (int j = 0; j < 10; j++)
-        {
-            printf(" %c ", grid[i][j]);
-        }
-        printf("\n");
-    }*/
     // Bucle del juego: 
     while (hits < 9)
     {
@@ -92,7 +81,6 @@ int main()
             printf("Agua!\n");
             map[shotRow][shotColumn] = 'O';
         }
-        
     }
     printf("Has hundido todos los barcos en %d intentos.", tryes);
 }

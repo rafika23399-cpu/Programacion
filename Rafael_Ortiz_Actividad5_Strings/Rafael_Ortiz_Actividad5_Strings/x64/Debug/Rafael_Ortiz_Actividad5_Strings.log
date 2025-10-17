@@ -1,0 +1,6 @@
+﻿  Rafael_Ortiz_Actividad5_Strings.cpp
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings.cpp(24,17): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings.cpp(42,20): warning C4805: '==': combinación no segura del tipo 'int' y el tipo 'bool' en la operación
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings.cpp(62,17): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings\Rafael_Ortiz_Actividad5_Strings.cpp(146,17): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Rafael_Ortiz_Actividad5_Strings.vcxproj -> C:\Users\rafik\Desktop\Repositorio Programacion\Programacion\Rafael_Ortiz_Actividad5_Strings\x64\Debug\Rafael_Ortiz_Actividad5_Strings.exe
