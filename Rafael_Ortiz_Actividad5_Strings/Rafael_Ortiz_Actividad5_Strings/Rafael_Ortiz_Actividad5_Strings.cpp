@@ -13,7 +13,7 @@ int main()
 
 	char word1[50];
 	int palindrome = true;
-	int lenght = 0;
+	int length = 0;
 
 	printf("Ejercicio 1:\n\nDada una palabra realizar las siguientes operaciones:\na.Leerla y escribir la palabra dada\nb.Escribir la palabra al reves\nc.Sacar un mensaje en donde diga si la palabra es palindroma\n\n");
 
@@ -21,19 +21,19 @@ int main()
 	gets_s(word1);
 	printf("\nLa palabra dada es: %s\n", word1);
 
-	lenght = strlen(word1);
+	length = strlen(word1);
 
 	printf("La palabra al reves es: ");
 	
-	for (int i = lenght; i >= 0; i--)
+	for (int i = length; i >= 0; i--)
 	{
 		printf("%c", word1[i]);
 	}
 	printf("\n\n");
 	
-	for (int i = 0; i < lenght/2; i++)
+	for (int i = 0; i < length/2; i++)
 	{
-		if (word1[i] != word1[lenght - 1 - i])
+		if (word1[i] != word1[length - 1 - i])
 		{
 			palindrome = false;
 		}
@@ -55,48 +55,58 @@ int main()
 	char sentence1[100];
 	int vocalCount[5] = { 0 };
 	char vocal[5] = {'a','e','i','o','u'};
+	float frequency;
 
 	printf("Dame una frase: ");
 	gets_s(sentence1);
 
-	lenght = strlen(sentence1);
-	printf("La frase tiene %d caracteres.\n", lenght);
+	length = strlen(sentence1);
 
-	for (int i = 0; i < lenght; i++)
+	if (length > 0)
 	{
-		switch (sentence1[i])
+		printf("La frase tiene %d caracteres.\n", length);
+
+		for (int i = 0; i < length; i++)
 		{
-		case 'a':
-		case 'A':
-			vocalCount[0]++;
-			break;
-		case 'e':
-		case 'E':
-			vocalCount[1]++;
-			break;
-		case 'i':
-		case 'I':
-			vocalCount[2]++;
-			break;
-		case 'o':
-		case 'O':
-			vocalCount[3]++;
-			break;
-		case 'u':
-		case 'U':
-			vocalCount[4]++;
-			break;
+			switch (sentence1[i])
+			{
+			case 'a':
+			case 'A':
+				vocalCount[0]++;
+				break;
+			case 'e':
+			case 'E':
+				vocalCount[1]++;
+				break;
+			case 'i':
+			case 'I':
+				vocalCount[2]++;
+				break;
+			case 'o':
+			case 'O':
+				vocalCount[3]++;
+				break;
+			case 'u':
+			case 'U':
+				vocalCount[4]++;
+				break;
+			}
 		}
+
+		for (int i = 0; i < 5; i++)
+		{
+			if (vocalCount[i] > 0)
+			{
+				frequency = (vocalCount[i] * 1.0 / length) * 100.0;
+				printf("Vocal '%c': %0.2f porciento de veces.\n", vocal[i], frequency);
+			}
+		}
+	}
+	else
+	{
+		printf("No has introducido ninguna frase.");
 	}
 	
-	for (int i = 0; i < 5; i++)
-	{
-		if (vocalCount[i] > 0)
-		{
-			printf("La vocal '%c' aparece %d veces.\n", vocal[i], vocalCount[i]);
-		}
-	}
-
 	// 3.Escribe un programa que lea del teclado una cadena y construya y muestre en la pantalla otra cadena en la que cada vocal haya sido remplazada por un punto.
 	printf("\n\nEjercicio 3:\n\n3.Escribe un programa que lea del teclado una cadena y construya y muestre en la pantalla otra cadena en la que cada vocal haya sido remplazada por un punto.\n\n");
 
@@ -105,7 +115,9 @@ int main()
 	printf("Introduce una cadena de caracteres: ");
 	gets_s(sentence2);
 
-	for (int i = 0; i < strlen(sentence2); i++)
+	length = strlen(sentence2);
+
+	for (int i = 0; i < length; i++)
 	{
 		switch (sentence2[i])
 		{
@@ -131,7 +143,14 @@ int main()
 			break;
 		}
 	}
-	printf("%s", sentence2);
+	if (length > 0)
+	{
+		printf("%s", sentence2);
+	}
+	else
+	{
+		printf("No has introducido una frase.\n");
+	}
 
 	// 4.Escribe un programa que lea del teclado una cadena y muestre en la pantalla la cantidad de consonantes y de vocales que contiene.
 	printf("\n\nEjercicio 4:\n\nEscribe un programa que lea del teclado una cadena y muestre en la pantalla la cantidad de consonantes y de vocales que contiene.\n\n");
@@ -143,9 +162,9 @@ int main()
 	printf("Introduce una cadena de caracteres: ");
 	gets_s(sentence3);
 
-	lenght = strlen(sentence3);
+	length = strlen(sentence3);
 
-	for (int i = 0; i < lenght; i++)
+	for (int i = 0; i < length; i++)
 	{
 		if (sentence3[i] != ' ')
 		{
@@ -177,13 +196,20 @@ int main()
 			}
 		}
 	}
-	printf("Numero de vocales: %d\nNumero de consonantes: %d\n", vocalCounter, consCounter);
+	if (length > 0)
+	{
+		printf("Numero de vocales: %d\nNumero de consonantes: %d\n", vocalCounter, consCounter);
+	}
+	else
+	{
+		printf("No has introducido una frase.\n");
+	}
 	
 	// 5.Escribir un programa que lea una frase y a continuación visualice cada palabra de la frase una debajo de otra, seguida cada palabra del número de letras que compone cada palabra.
 	printf("\n\nEjercicio 5:\n\nEscribir un programa que lea una frase y a continuacion visualice cada palabra de la frase una debajo de otra, seguida cada palabra del numero de letras que compone cada palabra.\n\n");
 
 	char sentence4[100];
-	int wordLenght = 0;
+	int wordLength = 0;
 
 	printf("Introduce una frase: ");
 	gets_s(sentence4);
@@ -193,17 +219,21 @@ int main()
 		if (sentence4[i] != ' ')
 		{
 			printf("%c", sentence4[i]);
-			wordLenght++;
+			wordLength++;
 		}
-		else if (wordLenght > 0)
+		else if (wordLength > 0)
 		{
-			printf(" (%d letras)\n", wordLenght);
-			wordLenght = 0;
+			printf(" (%d letras)\n", wordLength);
+			wordLength = 0;
 		}
 	}
-	if (wordLenght > 0)
+	if (wordLength > 0)
 	{
-		printf(" (%d letras)\n", wordLenght);
+		printf(" (%d letras)\n", wordLength);
+	}
+	else
+	{
+		printf("No has introducido una frase.");
 	}
 
 	// 6. Escribir un programa que lea una frase y sustituya todas las secuencias de dos o más blancos por un solo blanco y visualice la frase.
