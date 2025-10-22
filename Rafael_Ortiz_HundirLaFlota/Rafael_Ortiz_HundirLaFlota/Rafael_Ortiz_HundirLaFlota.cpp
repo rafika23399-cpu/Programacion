@@ -8,7 +8,6 @@
 
 int main()
 {
-    srand(time(NULL));
     char map[MAPSIZE][MAPSIZE];
     char grid[MAPSIZE][MAPSIZE];
     int shipRow[9];
@@ -20,9 +19,9 @@ int main()
 
     // Asignacion del mapa y grid:
 
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAPSIZE; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < MAPSIZE; j++)
         {
             map[i][j] = '-';
             grid[i][j] = '-';
@@ -31,9 +30,9 @@ int main()
    
     // Impresion del mapa vacio:
     
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < MAPSIZE; i++)
     {
-        for (int j = 0; j < 10; j++)
+        for (int j = 0; j < MAPSIZE; j++)
         {
             printf(" %c ", map[i][j]);
         }
@@ -52,9 +51,9 @@ int main()
     while (hits < 9)
     {
         // Impresion del mapa al principio de cada turno:
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < MAPSIZE; i++)
         {
-            for (int j = 0; j < 10; j++)
+            for (int j = 0; j < MAPSIZE; j++)
             {
                 printf(" %c ", map[i][j]);
             }
@@ -64,7 +63,7 @@ int main()
         scanf_s("%d %d", &shotRow, &shotColumn);
         tryes++;
 
-        if (map[shotRow][shotColumn] == 'X')
+        if (map[shotRow][shotColumn] == 'X' || map[shotRow][shotColumn] == 'O')
         {
             printf("Ya has disparado aqui!\n");
         }

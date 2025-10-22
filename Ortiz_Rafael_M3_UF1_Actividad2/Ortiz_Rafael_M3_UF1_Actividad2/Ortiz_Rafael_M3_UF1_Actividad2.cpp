@@ -113,7 +113,7 @@ int main()
 4 - azul
 5 - roja*/
     
-/*    srand(time(NULL));
+    srand(time(NULL));
 
     int randomNumber = (rand() % 5) + 1;
 
@@ -185,5 +185,5 @@ int main()
         finalTotal = total;
         printf("No se aplica ningún descuento.\n");
         printf("El valor total de tu compra es: %.2f euros.\n", finalTotal);
-    }*/
+    }
 }
