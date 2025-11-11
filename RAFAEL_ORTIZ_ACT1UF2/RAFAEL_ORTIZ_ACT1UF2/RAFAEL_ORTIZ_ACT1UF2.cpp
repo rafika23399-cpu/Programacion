@@ -23,12 +23,12 @@ void Average3(float n1, float n2, float n3);
 // Ejercicio 4
 
 void Ex4();
-void salute();
+void Salute();
 
 // Ejercicio 5
 
 void Ex5();
-int negative(int n1);
+int Negative(int n1);
 
 // Ejercicio 6
 
@@ -173,10 +173,10 @@ void Average3(float n1, float n2, float n3)
 void Ex4()
 {
     printf("Ejercicio 4:\n");
-    salute();
+    Salute();
 }
 
-void salute()
+void Salute()
 {
     printf("Hola\n\n");
 }
@@ -191,10 +191,17 @@ void Ex5()
 
     n1 = GetNumber();
 
-    printf("%d\n", negative(n1));
+    if (Negative(n1) == 1)
+    {
+        printf("El numero %d es negativo", n1);
+    }
+    else
+    {
+        printf("El numero %d es positivo", n1);
+    }
 }
 
-int negative(int n1)
+int Negative(int n1)
 {
     if (n1 < 0)
     {
